@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="bottle">
+    <static>true</static>
+    <link name="main_link">
+      <collision name="plane_collision">
+        <geometry>
+          <mesh>
+            <uri>model://bottle/meshes/bottle.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="plane_visual">
+        <geometry>
+          <mesh>
+            <uri>model://bottle/meshes/bottle.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://bottle/materials/scripts</uri>
+            <uri>model://bottle/materials/textures</uri>
+            <name>Bottle/Material</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="rock2">
+    <static>true</static>
+    <link name="main_link">
+      <collision name="plane_collision">
+        <geometry>
+          <mesh>
+            <uri>model://rock2/meshes/rock2.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="plane_visual">
+        <geometry>
+          <mesh>
+            <uri>model://rock2/meshes/rock2.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://rock2/materials/scripts</uri>
+            <uri>model://rock2/materials/textures</uri>
+            <name>Rock2/Material</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

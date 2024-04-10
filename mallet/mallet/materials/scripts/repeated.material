@@ -1,0 +1,14 @@
+material Mallet/Material
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../textures/mallet.png
+      }
+    }
+  }
+}

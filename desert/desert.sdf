@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="desert">
+    <static>true</static>
+    <link name="main_link">
+      <collision name="plane_collision">
+        <geometry>
+          <mesh>
+            <uri>model://desert/meshes/desert.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="plane_visual">
+        <geometry>
+          <mesh>
+            <uri>model://desert/meshes/desert.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://desert/materials/scripts</uri>
+            <uri>model://desert/materials/textures</uri>
+            <name>Desert/Material</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

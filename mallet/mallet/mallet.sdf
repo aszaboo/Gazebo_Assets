@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<sdf version="1.7">
+  <model name="desert">
+    <static>true</static>
+    <link name="main_link">
+      <collision name="plane_collision">
+        <geometry>
+          <mesh>
+            <uri>model://mallet/meshes/mallet.dae</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="plane_visual">
+        <geometry>
+          <mesh>
+            <uri>model://mallet/meshes/mallet.dae</uri>
+          </mesh>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://mallet/materials/scripts</uri>
+            <uri>model://mallet/materials/textures</uri>
+            <name>Mallet/Material</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
